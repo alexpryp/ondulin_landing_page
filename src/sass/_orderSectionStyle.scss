@@ -1,0 +1,74 @@
+.order-online {
+    padding: 70px 0 0 0 ;
+    .take-care-yourself h3, .order-online-header h1, .no-need-to-go {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+    }
+    .take-care-yourself {
+        padding: 10px 0 50px;
+        h3 {
+            color: #a5a5a5;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+        }
+    }
+    .order-online-header {
+        padding: 8px 0 3px;
+        h1 {
+            font-size: 60px;
+            
+        }
+    }
+    .big-car-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 0;
+    }
+    .no-need-to-go-wrapper {
+        padding-bottom: 60px;
+    }
+    .no-need-to-go {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 4px;
+        line-height: 1.55;
+    }
+    .buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order-button-second, .count-materials-button {
+        width: 305px;
+        height: 60px;
+        display: block;
+        border-radius: 2px;
+        margin: 0 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        line-height: 4; 
+    }
+    .order-button-second {
+        background-color: #db072f;
+        color: #fff;   
+    }
+    .order-button-second:hover {
+        background-color: #b50021;
+    }
+    .count-materials-button {
+        background-color: #fff;
+        border: 1px solid #db072f;
+        color: #db072f;
+    }
+    .count-materials-button:hover {
+        background-color: #b50021;
+        border: 1px solid #b50021;
+        color: #fff;
+    }
+}

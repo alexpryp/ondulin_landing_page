@@ -3,6 +3,7 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cssmin = require('gulp-cssmin'); //Минификатор CSS файлов
+const del = require('del');
 const babel = require('gulp-babel');
 
 sass.compiler = require('node-sass');
