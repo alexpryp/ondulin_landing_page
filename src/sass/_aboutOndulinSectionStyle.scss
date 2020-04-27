@@ -1,14 +1,17 @@
-.dealers {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 180px 0 45px;
-    .dealerships-headers, .dealerships-info {
+.about-ondulin {
+    .headers-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f8f8f8;
+        padding: 90px 0 135px;
+    }
+    .headers-wrapper-headers, .headers-wrapper-text {
         max-width: 560px;
         flex-grow: 1;
         margin: 0 20px;
     }
-    .dealerships-headers {
+    .headers-wrapper-headers {
         h2 {
             font-size: 46px;
             font-weight: 700;
@@ -20,11 +23,14 @@
             margin: 24px 0 0 ;
         }
     }
-    .dealerships-info {
+    .headers-wrapper-text {
         p {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 300;
             line-height: 1.55;
+        }
+        .bold {
+            font-weight: 600;
         }
     }
 }
