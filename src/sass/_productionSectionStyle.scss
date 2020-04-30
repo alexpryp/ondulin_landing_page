@@ -1,0 +1,87 @@
+.production {
+    padding: 135px 0 0 0;
+    .production-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            max-width: 1160px;
+            flex-grow: 1;
+            margin: 0;
+        }
+        h2 {
+            font-size: 44px;
+            font-weight: 600;
+            margin: 0 0 40px 0px;
+        }
+    }
+    .production-cards {
+        display: flex;
+        justify-content: center;
+    }
+    .production-cards-wrapper {
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .production-card {
+        max-width: 560px;
+        margin: 50px 20px;
+        .photo {
+            width: 560px;
+            height: 400px;
+
+            img {
+                width: 100%;
+                height: 100%; 
+            }
+        }
+        .prod-header {
+            padding: 40px 0 12px 0;
+            h3 {
+                margin: 0;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 1.23;
+            }
+        }
+        .prod-subheader {
+            font-size: 18px;
+            padding: 2px 0 0 0;
+            p {
+                margin: 0;
+                font-weight: 600;
+                line-height: 1.35;
+            }
+        }
+        .prod-specification {
+            padding: 17px 0 25px;
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.55;
+            }
+        }
+        .prod-button a {
+            display: block;
+            width: 138px;
+            height: 45px;
+            color: #fff;
+            font: 14px 'Roboto', Arial, sans-serif;
+            background-color: #db072f;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 3.2;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        .prod-button a:hover {
+            background-color: #b50021;
+        }
+
+
+        
+    }
+}

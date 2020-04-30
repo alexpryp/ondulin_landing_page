@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #575757;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 40px;
+    .upstairs a {
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.35;
+        text-decoration: none;
+    }
+    .upstairs a:hover {
+        color: #db072f;  
+    } 
+    .t452__right_social_links_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .t452__right_social_links_item {
+        margin: 5px;
+    }
+}
