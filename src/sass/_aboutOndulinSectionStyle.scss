@@ -1,15 +1,23 @@
 .about-ondulin {
+    background-image: url(../images/bgimg.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	border-collapse: cover;
+	background-attachment: fixed;
+    background-size: cover;
     .headers-wrapper {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        background-color: #f8f8f8;
+        //background-color: #f8f8f8;
         padding: 90px 0 135px;
     }
     .headers-wrapper-headers, .headers-wrapper-text {
         max-width: 560px;
         flex-grow: 1;
         margin: 0 20px;
+        color: #fff;
+        text-shadow: #000 0 0 15px , #000 0 0 15px, #000 0 0 20px, #000 0 0 20px;
     }
     .headers-wrapper-headers {
         h2 {
@@ -31,6 +39,17 @@
         }
         .bold {
             font-weight: 600;
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width: 980px) {
+    .about-ondulin {
+        box-shadow: 0px 0px 10px 5px #111;
+        .headers-wrapper {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

@@ -1,5 +1,15 @@
 .order-online {
-    padding: 70px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 180px 0 ;
+    background-image: url(../images/product-gallery-img1.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	border-collapse: cover;
+	background-attachment: fixed;
+    background-size: cover;
     .take-care-yourself h3, .order-online-header h1, .no-need-to-go {
         text-align: center;
         padding: 0;
@@ -9,17 +19,20 @@
     .take-care-yourself {
         padding: 10px 0 50px;
         h3 {
-            color: #a5a5a5;
+            //color: #a5a5a5;
+            color: #fff;
             font-size: 20px;
             text-transform: uppercase;
             letter-spacing: 2.5px;
+            text-shadow: #000 0 0 15px , #000 0 0 15px, #000 0 0 20px, #000 0 0 20px;
         }
     }
     .order-online-header {
         padding: 8px 0 3px;
         h1 {
             font-size: 60px;
-            
+            color: #fff;
+            text-shadow: #000 0 0 15px , #000 0 0 15px, #000 0 0 20px, #000 0 0 20px;
         }
     }
     .big-car-wrapper {
@@ -27,15 +40,21 @@
         justify-content: center;
         align-items: center;
         padding: 45px 0;
+        max-width: 715px;
+        img {
+            width: 100%;
+        }
     }
     .no-need-to-go-wrapper {
         padding-bottom: 60px;
     }
     .no-need-to-go {
-        font-size: 18px;
+        font-size: 24px;
         padding-top: 10px;
         padding-bottom: 4px;
         line-height: 1.55;
+        color: #fff;
+        text-shadow: #000 0 0 15px , #000 0 0 15px, #000 0 0 20px, #000 0 0 20px;
     }
     .buttons-wrapper {
         display: flex;
@@ -43,20 +62,21 @@
         align-items: center;
     }
     .order-button-second, .count-materials-button {
-        width: 305px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
         height: 60px;
-        display: block;
-        border-radius: 2px;
+        border-radius: 3px;
         margin: 0 12px;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 400;
         text-align: center;
-        line-height: 4; 
     }
     .order-button-second {
         background-color: #db072f;
-        color: #fff;   
+        color: #fff; 
     }
     .order-button-second:hover {
         background-color: #b50021;
@@ -71,4 +91,44 @@
         border: 1px solid #b50021;
         color: #fff;
     }
+}
+
+// media queries
+@media screen and (max-width: 1200px) {
+    .order-online {
+        .order-online-header {
+            h1 {
+                font-size: 48px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .order-online {
+        box-shadow: 0px 0px 10px 5px #111;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .order-online {
+        .buttons-wrapper {
+            flex-direction: column;
+        }
+        .count-materials-button {
+            margin: 20px 12px 0px 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .order-online {
+        .order-online-header {
+            h1 {
+                font-size: 30px;
+                
+            }
+        }
+    }   
 }

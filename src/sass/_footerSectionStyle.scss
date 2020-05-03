@@ -28,3 +28,11 @@ footer {
         margin: 5px;
     }
 }
+
+// media queries
+@media screen and (max-width: 640px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+}

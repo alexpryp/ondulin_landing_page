@@ -7,16 +7,24 @@
     <link rel="shortcut icon" href="dist/favicon_16_16.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <div class="menu">
+      <div class="gamburger-menu">
+        <div class="menu-line first-line"></div>
+        <div class="menu-line second-line"></div>
+        <div class="menu-line third-line"></div>
+        <div class="menu-line fourth-line"></div>
+      </div>
+    </div>
+    <header id="header">
         <div class="logo">
             <div class="logo-image"><img src="dist/images/logo.svg" alt="Logo"></div>
             <div class="logo-text">Легкі покрівельні системи</div>
         </div>
         <nav>
             <ul class="nav-list">
-                <li><a href="">Дилерські центри</a></li>
-                <li><a href="">Про Ондулін</a></li>
-                <li><a href="">Продукція</a></li>
+                <li><a href="#dealers">Дилерські центри</a></li>
+                <li><a href="#about-ondulin">Про Ондулін</a></li>
+                <li><a href="#production">Продукція</a></li>
             </ul>
         </nav>
         <div class="order-button-wrapper">
@@ -35,17 +43,78 @@
             <a class="count-materials-button" href="http://store.onduline.com.ua/cherepica/">розрахувати матеріали</a>
         </div>
     </section>
-    <section class="dealers">
-        <div class="dealerships-headers">
-            <h2>Дилерські центри</h2>
-            <p>Магазини, які надають послуги доставки</p>
-        </div> 
-        <div class="dealerships-info">
-            <p>Опублікована інформація дійсна 02.04.2020 і, звичайно, може змінюватися з огляду на те, що відбувається в країні. Будь ласка, уточнюйте у свїх магазинів про їх можливості по доставці (регіон обслуговування, час і вартість).</p>
-            <p>Приносимо вибачення, якщо магазин змушений був призупинити торгівлю. Будьте здорові!</p>
+    <section class="dealers" id="dealers">
+        <div class="dealers-info">
+            <div class="dealerships-headers">
+                <h2>Дилерські центри</h2>
+                <p>Магазини, які надають послуги доставки</p>
+            </div> 
+            <div class="dealerships-info">
+                <p>Опублікована інформація дійсна 02.04.2020 і, звичайно, може змінюватися з огляду на те, що відбувається в країні. Будь ласка, уточнюйте у свїх магазинів про їх можливості по доставці (регіон обслуговування, час і вартість).</p>
+                <p>Приносимо вибачення, якщо магазин змушений був призупинити торгівлю. Будьте здорові!</p>
+            </div>
+        </div>
+        <div class="all-shops-button">
+            <a href="">
+                <div class="file-image">
+                    <img src="dist/images/pdf_1.svg" alt="Pdf file">
+                </div>
+                 <span>Всі магазини, які доставляють ондулін додому</span>  
+            </a>
+        </div>
+        <div class="dealers-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Магазин</th>
+                <th>Телефон</th>
+                <th>Регіони доставки</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    Метр
+                  </div>
+                  
+                </td>
+                <td>+7 (3952) 288-200</td>
+                <td>
+                  <div>м. Іркутск, с. Хомутово, м. Тулун
+                  <div class="mobile-button-dealer">
+                    <a href="http://metr-dom.ru/?cid=69" target="_blank">перейти на сайт</a>
+                  </div>
+                  </div>
+                </td>
+                <td class="desktop-button-dealer">
+                  <a href="http://metr-dom.ru/?cid=69" target="_blank">перейти на сайт</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    ТД Вімос
+                  </div>
+                  
+                </td>
+                <td>+7 (800) 555-66-66</td>
+                <td>
+                  <div>Санкт Петербург та область</div>
+                  <div class="mobile-button-dealer">
+                    <a href="https://www.vimos.ru/ondulin" target="_blank">перейти на сайт</a>
+                  </div> 
+                </td>
+                <td class="desktop-button-dealer">
+                  <a href="https://www.vimos.ru/ondulin" target="_blank">перейти на сайт</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </section>
-    <section class="about-ondulin">
+    <section class="about-ondulin" id="about-ondulin">
         <div class="headers-wrapper">
             <div class="headers-wrapper-headers">
                 <h2>Коли всі вдома</h2>
@@ -58,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="production">
+    <section class="production" id="production">
         <div class="production-header">
             <div>
                 <h2>Продукція</h2>
@@ -97,7 +166,7 @@
                         <p>Бюджетна і практична покрівля для другорядних будівель (сараї, лазні) і реновації старих дахів.</p>
                     </div>
                     <div class="prod-button">
-                        <a href="#" target="_blank" class="product-button">дивитись</a>
+                        <a href="" target="_blank" class="product-button">дивитись</a>
                     </div>
                 </div>
                 <div class="production-card">
@@ -145,7 +214,7 @@
                 їх точну кількість через онлайн-калькулятор за 5 хвилин
             </p>
             <div class="arrow"> 
-                <svg class="t580__arrow-icon_mobile" style="fill:#db072f; width: 397px; height: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 70">
+                <svg class="t580__arrow-icon_mobile" style="fill:#db072f; width: 50px; height: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 70">
                     <path d="M31.5 47c-1.1-.9-2.7-.7-3.5.4L20.2 57V5.8c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5V57l-7.8-9.7c-.8-1-2.4-1.2-3.5-.3-1.1.9-1.2 2.4-.4 3.5l12.2 15.2c.5.6 1.2.9 1.9.9s1.5-.3 1.9-.9l12.2-15.2c1-1.1.9-2.6-.2-3.5z"></path>
                 </svg> 
             </div>
@@ -174,7 +243,7 @@
         </div>
         <div class="upstairs">
             <p>
-                <a href="#">
+                <a href="#header">
                     наверх
                     <span class="t452__icon"> 
                         <svg width="5px" height="17px" viewBox="0 0 6 20" version="1.1">
@@ -195,4 +264,5 @@
 
 <link rel="stylesheet" href="dist/libs/css/normalize.css">
 <link rel="stylesheet" type="text/css" href ="dist/css/style.css">
+<script src="dist/js/script.js"></script>
 </html>

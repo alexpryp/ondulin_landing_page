@@ -1,16 +1,21 @@
 .dealers {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 180px 0 45px;
-    .dealerships-headers, .dealerships-info {
+    .dealers-info, .all-shops-button, .dealers-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dealers-info {
+        align-items: flex-start;
+        padding: 0px 0 45px;
+    }
+    .dealerships-headers, .dealerships-info, .all-shops-button a {
         max-width: 560px;
         flex-grow: 1;
         margin: 0 20px;
     }
     .dealerships-headers {
         h2 {
-            font-size: 46px;
+            font-size: 52px;
             font-weight: 700;
             margin: 16px 0 0 0;
         }
@@ -25,6 +30,154 @@
             font-size: 16px;
             font-weight: 300;
             line-height: 1.55;
+        }
+    }
+    .all-shops-button {
+        margin: 0 0 90px 0;
+    }
+    .all-shops-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5px;
+        width: 603px;
+        height: 60px;
+        color: #fff;
+        font: 16px 'Roboto', Arial, sans-serif;
+        background-color: #db072f;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        .file-image {
+            line-height: 1;
+        }
+        img {
+            width: 32px;
+            margin: 0 15px 0 0;
+        }
+    }
+    .all-shops-button a:hover {
+        background-color: #b50021;
+    }
+    .dealers-table {
+        margin: 0 0 120px 0;
+        table {
+            max-width: 1160px;
+            border-collapse: collapse;
+        }
+        thead {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        th, td {
+            padding: 20px;
+            text-align: left;
+        }
+        th:nth-child(1), td:nth-child(1) {
+            width: 20vw;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 20vw;
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 45vw;
+        }
+        th:nth-child(4), td:nth-child(4) {
+            width: 15vw;
+        }
+        tr {
+            border-bottom: 1px solid #cccccc;
+        }
+        tr:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+        td {
+            font-size: 18px;
+            line-height: 1.55;
+            font-weight: 300;
+        }
+        td a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 190px;
+            height: 45px;
+            color: #fff;
+            font: 14px 'Roboto', Arial, sans-serif;
+            background-color: #db072f;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        td a:hover {
+            background-color: #b50021;
+        }
+    }
+    .mobile-button-dealer {
+        display: none;
+    }
+}
+
+// media queries
+@media screen and (max-width: 1200px) {
+    .dealers {
+        .dealerships-headers {
+            h2 {
+                font-size: 48px;
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    .dealers {
+        .dealers-info {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .dealers {
+        .dealerships-headers {
+            h2 {
+                font-size: 30px;
+                
+            }
+        }
+        .dealers-table {
+            thead, td {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 5px;
+            }
+            th:nth-child(1), td:nth-child(1) {
+                width: 25vw;
+            }
+            th:nth-child(2), td:nth-child(2) {
+                width: 25vw;
+            }
+            th:nth-child(3), td:nth-child(3) {
+                width: 50vw;
+            }
+            th:nth-child(4), td:nth-child(4) {
+                width: 0vw;
+            }
+            td a {
+                width: 140px;
+                font: 12px 'Roboto', Arial, sans-serif;
+            }
+        }
+        .mobile-button-dealer {
+            display: block;
+        }
+        .desktop-button-dealer, th:nth-child(4) {
+            display: none;
         }
     }
 }
