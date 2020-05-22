@@ -27,6 +27,12 @@ footer {
     .t452__right_social_links_item {
         margin: 5px;
     }
+    .t452__right_social_links_item svg {
+        fill:#ffffff;
+    }
+    .t452__right_social_links_item svg:hover {
+        fill: #db072f;
+    }
 }
 
 // media queries

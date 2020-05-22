@@ -18,19 +18,26 @@
         color: #fff;
         text-shadow: #000 0 0 15px , #000 0 0 15px, #000 0 0 20px, #000 0 0 20px;
     }
-    .headers-wrapper-headers {
-        h2 {
-            font-size: 46px;
-            font-weight: 700;
-            margin: 16px 0 0 0;
-        }
-        p {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 24px 0 0 ;
-        }
+    .headers-wrapper-headers-first {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
+        font-size: 46px;
+        font-weight: 700;
+        margin: 16px 0 0 0;
+    }
+    .headers-wrapper-headers-second {
+        position: relative;
+        bottom: 100px;
+        opacity: 0.0;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 24px 0 0 ;
     }
     .headers-wrapper-text {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         p {
             font-size: 18px;
             font-weight: 300;

@@ -1,6 +1,9 @@
 .production {
     padding: 135px 0 0 0;
     .production-header {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,6 +19,9 @@
         }
     }
     .production-cards {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         display: flex;
         justify-content: center;
     }

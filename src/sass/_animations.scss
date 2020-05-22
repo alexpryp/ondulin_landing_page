@@ -1,0 +1,113 @@
+.order-online .take-care-yourself.take-care-yourself-active,
+.order-online .order-online-header.order-online-header-active,
+.order-online .big-car-wrapper.big-car-wrapper-active,
+.order-online .no-need-to-go-wrapper.no-need-to-go-wrapper-active,
+.order-online .order-button-second.order-button-second-active,
+.order-online  .count-materials-button.count-materials-button-active,
+.dealers .dealerships-headers-first.dealerships-headers-first-active,
+.dealers .dealerships-headers-second.dealerships-headers-second-active,
+.dealers .dealerships-info.dealerships-info-active,
+.dealers .all-shops-button.all-shops-button-active,
+.dealers .dealers-table.dealers-table-active,
+.about-ondulin .headers-wrapper-headers-first.headers-wrapper-headers-first-active,
+.about-ondulin .headers-wrapper-headers-second.headers-wrapper-headers-second-active,
+.about-ondulin .headers-wrapper-text.headers-wrapper-text-active,
+.production .production-header.production-header-active,
+.production .production-cards.production-cards-active,
+.store-content .store-content-header.store-content-header-active,
+.store-content .store-content-paragraph.store-content-paragraph-active,
+.store-content .store-button.store-button-active,
+.store-content .arrow.arrow-active {
+    opacity: 1;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+
+
+.order-online {
+    .take-care-yourself.take-care-yourself-active {
+        top: 0px;
+        transition-delay: 1.6s;
+    }
+    .order-online-header.order-online-header-active {
+        bottom: 0px;
+        transition-delay: 1.3s;
+    }
+    .big-car-wrapper.big-car-wrapper-active {
+        top: 0px;
+        transition-delay: 1.3s;
+    }
+    .no-need-to-go-wrapper.no-need-to-go-wrapper-active {
+        top: 0px;
+    }
+    .order-button-second.order-button-second-active {
+        top: 0px;
+        transition-delay: 0.1s;
+    }
+    .count-materials-button.count-materials-button-active {
+        top: 0px;
+        transition-delay: 0.2s;
+    }
+}
+
+.dealers {
+    .dealerships-headers-first.dealerships-headers-first-active {
+        top: 0px;
+    }
+    .dealerships-headers-second.dealerships-headers-second-active {
+        bottom: 0px;
+        transition-delay: 0.2s;
+    }
+    .dealerships-info.dealerships-info-active {
+        top: 0px;
+        transition-delay: 0.4s;
+    }
+    .all-shops-button.all-shops-button-active {
+        top: 0;
+    }
+    .dealers-table.dealers-table-active {
+        top: 0;
+        transition-delay: 0.2s;
+    }
+}
+
+.about-ondulin {
+    .headers-wrapper-headers-first.headers-wrapper-headers-first-active {
+        top: 0;
+    }
+    .headers-wrapper-headers-second.headers-wrapper-headers-second-active {
+        bottom: 0;
+        transition-delay: 0.4s;
+    }
+    .headers-wrapper-text.headers-wrapper-text-active {
+        top: 0;
+        transition-delay: 0.8s;
+    }
+}
+
+.production {
+    .production-header.production-header-active {
+        top: 0;
+    }
+    .production-cards.production-cards-active {
+        top: 0;
+    }
+}
+
+.store-content {
+    .store-content-header.store-content-header-active {
+        top: 0;
+    }
+    .store-content-paragraph.store-content-paragraph-active {
+        bottom: 0;
+        transition-delay: 0.4s;
+    }
+    .store-button.store-button-active {
+        bottom: 0;
+        transition-delay: 0.8s;
+    }
+    .arrow.arrow-active {
+        bottom: 0;
+        transition-delay: 1.0s;
+    }
+}

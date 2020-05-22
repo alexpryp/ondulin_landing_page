@@ -21,13 +21,29 @@
             font-weight: 300;
             text-align: center;
         }
+        .store-content-header {
+            position: relative;
+            top: 100px;
+            opacity: 0.0;
+        }
+        .store-content-paragraph {
+            position: relative;
+            bottom: 100px;
+            opacity: 0.0;
+        }
         .arrow {
+            position: relative;
+            bottom: 100px;
+            opacity: 0.0;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 30px 0 20px 0;
         }
         .store-button {
+            position: relative;
+            bottom: 100px;
+            opacity: 0.0;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -1,4 +1,5 @@
 .order-online {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +17,9 @@
         font-weight: 600;
     }
     .take-care-yourself {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         padding: 10px 0 50px;
         h3 {
             //color: #a5a5a5;
@@ -27,6 +31,9 @@
         }
     }
     .order-online-header {
+        position: relative;
+        bottom: 100px;
+        opacity: 0.0;
         padding: 8px 0 3px;
         h1 {
             font-size: 60px;
@@ -35,6 +42,9 @@
         }
     }
     .big-car-wrapper {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,6 +55,9 @@
         }
     }
     .no-need-to-go-wrapper {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         padding-bottom: 60px;
     }
     .no-need-to-go {
@@ -74,6 +87,9 @@
         text-align: center;
     }
     .order-button-second {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         background-color: #db072f;
         color: #fff; 
     }
@@ -81,6 +97,9 @@
         background-color: #b50021;
     }
     .count-materials-button {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         background-color: #fff;
         border: 1px solid #db072f;
         color: #db072f;

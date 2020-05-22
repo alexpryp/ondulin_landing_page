@@ -43,9 +43,72 @@ try {
 
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     _loop();
-  }
+  } //---------------------------------------------------------------------------
+  //Page component animation
+
 } catch (err) {
   _iterator.e(err);
 } finally {
   _iterator.f();
 }
+
+var isScrolling = false;
+window.addEventListener("scroll", throttleScroll, false);
+
+function isPartiallyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+  var height = elementBoundary.height;
+  return top + height >= 0 && height + window.innerHeight >= bottom;
+}
+
+function isFullyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+  return top >= 0 && bottom <= window.innerHeight;
+} //that launches the page scroll handler 'scrolling'. 
+//using the window.requestAnimationFrame method, we set the handler 'scrolling' call 
+//on the next frame of the animation. This means that the current event handler 
+//will be called about 60 times per second, which is a valid value when working 
+//with DOM structures of various kinds.
+
+
+function throttleScroll(e) {
+  if (isScrolling == false) {
+    window.requestAnimationFrame(function () {
+      scrolling(e);
+      isScrolling = false;
+    });
+  }
+
+  isScrolling = true;
+}
+
+document.addEventListener("DOMContentLoaded", scrolling, false);
+var elementArray = [];
+var elementCounter = 0;
+var selectorsArray = ["take-care-yourself", "order-online-header", "big-car-wrapper", "no-need-to-go-wrapper", "order-button-second", "count-materials-button", "dealerships-headers-first", "dealerships-headers-second", "dealerships-info", "all-shops-button", "dealers-table", "headers-wrapper-headers-first", "headers-wrapper-headers-second", "headers-wrapper-text", "production-header", "production-cards", "store-content-header", "store-content-paragraph", "store-button", "arrow"];
+
+for (var i = 0; i < selectorsArray.length; i++) {
+  elementArray.push([document.getElementsByClassName(selectorsArray[i])[0], true]);
+}
+
+function scrolling(e) {
+  for (var _i = 0; _i < elementArray.length; _i++) {
+    if (elementCounter == selectorsArray.length) {
+      document.removeEventListener("DOMContentLoaded", scrolling);
+      break;
+    }
+
+    if (elementArray[_i][1] && isPartiallyVisible(elementArray[_i][0])) {
+      elementArray[_i][0].classList.add("".concat(selectorsArray[_i] + '-active'));
+
+      elementArray[_i][1] = false;
+      elementCounter += 1;
+    }
+  }
+}
+
+;

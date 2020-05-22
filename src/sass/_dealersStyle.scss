@@ -13,19 +13,26 @@
         flex-grow: 1;
         margin: 0 20px;
     }
-    .dealerships-headers {
-        h2 {
-            font-size: 52px;
-            font-weight: 700;
-            margin: 16px 0 0 0;
-        }
-        p {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 24px 0 0 ;
-        }
+    .dealerships-headers-first {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
+        font-size: 52px;
+        font-weight: 700;
+        margin: 16px 0 0 0;
+    }
+    .dealerships-headers-second {
+        position: relative;
+        bottom: 100px;
+        opacity: 0.0;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 24px 0 0 ;
     }
     .dealerships-info {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         p {
             font-size: 16px;
             font-weight: 300;
@@ -33,6 +40,9 @@
         }
     }
     .all-shops-button {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         margin: 0 0 90px 0;
     }
     .all-shops-button a {
@@ -62,6 +72,9 @@
         background-color: #b50021;
     }
     .dealers-table {
+        position: relative;
+        top: 100px;
+        opacity: 0.0;
         margin: 0 0 120px 0;
         table {
             max-width: 1160px;
@@ -125,11 +138,8 @@
 // media queries
 @media screen and (max-width: 1200px) {
     .dealers {
-        .dealerships-headers {
-            h2 {
-                font-size: 48px;
-                
-            }
+        .dealerships-headers-first {
+            font-size: 48px;
         }
     }
 }
@@ -143,11 +153,8 @@
 }
 @media screen and (max-width: 640px) {
     .dealers {
-        .dealerships-headers {
-            h2 {
-                font-size: 30px;
-                
-            }
+        .dealerships-headers-first {
+            font-size: 30px;
         }
         .dealers-table {
             thead, td {
